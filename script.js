@@ -46,12 +46,12 @@ function setGame() {
     }
 
     // doing same for the board
-    for (let r = 1; r <= 9; r++) {
-        for (let c = 1; c <= 9; c++) {
+    for (let r = 0; r < 9; r++) {
+        for (let c = 0; c < 9; c++) {
             let tile = document.createElement("div");
             tile.id = r.toString() + "-" + c.toString();
             tile.classList.add("tile");
-            document.getElementById("board").append(tiel);
+            document.getElementById("board").append(tile);
         }
     }
 }
