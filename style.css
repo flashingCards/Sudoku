@@ -16,9 +16,10 @@ hr {
 }
 
 #board {
+    color: white;
     height: 450px;
     width: 450px;
-    background-color: #121212;
+    background-color: #292929;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -41,13 +42,18 @@ hr {
     justify-content: center;
     align-items: center;
 
+    /* remove text selection */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
 }
 
 #digits {
     width: 448px;
     height: 50px;
 
-    background-color: #121212;
+    background-color: #292929;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -66,8 +72,27 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* remove text selecion */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .number-selected {
     background-color: grey;
 }
+
+.tile-start {
+    background-color: grey;
+}
+
+/*  HORIZONTAL AND VERTICAL LINE TO DIVIDE THE GRID INTO 3*3 GRID 
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 5px solid black;
+} */

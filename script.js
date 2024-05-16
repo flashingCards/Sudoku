@@ -54,6 +54,11 @@ function setGame() {
             let tile = document.createElement("div");
             tile.id = r.toString() + "-" + c.toString();
 
+            if (board[r][c] != '-') {
+                tile.innerText = board[r][c];
+                tile.classList.add("tile-start");
+            }
+        
             tile.addEventListener("click", selectTile);
 
             tile.classList.add("tile");
@@ -73,7 +78,12 @@ function selectNumber() {
 }
 
 function selectTile() {
+    
     if (numSelected) {
+
+        if (this.innerText != "") {
+            return;
+        }
         this.innerText = numSelected.id;
     }
 }
