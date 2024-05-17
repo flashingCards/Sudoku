@@ -2,8 +2,10 @@
 var numSelected = null;
 var tileSelected = null;
 
+// numbers of error
 var errors = 0;
 
+// already made empty matrix 
 var board = [
     "--74916-5",
     "2---6-3-9",
@@ -16,6 +18,7 @@ var board = [
     "81--45---"
 ]
 
+// solution of the matrix
 var solution = [
     "387491625",
     "241568379",
@@ -53,20 +56,23 @@ function setGame() {
         for (let c = 0; c < 9; c++) {
             let tile = document.createElement("div");
             tile.id = r.toString() + "-" + c.toString();
-
+            
+            // this removes the - from the made matrix
             if (board[r][c] != '-') {
                 tile.innerText = board[r][c];
                 tile.classList.add("tile-start");
             }
-        
+            
             tile.addEventListener("click", selectTile);
 
+            // adds a new class to the starting numbers to be different
             tile.classList.add("tile");
             document.getElementById("board").append(tile);
         }
     }
 }
 
+// a functon to select the number form the numbers we want to put on the board
 function selectNumber() {
 
     if (numSelected != null) {
@@ -77,6 +83,7 @@ function selectNumber() {
     numSelected.classList.add("number-selected");
 }
 
+// select the tile we want to put the number on
 function selectTile() {
     
     if (numSelected) {
