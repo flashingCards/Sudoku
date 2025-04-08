@@ -1,26 +1,48 @@
 
-# Sudoku
+# 🧩 Sudoku Game
 
-A sudoku game which can be played by anyone on a 9*9 grid the user have to fill the numbers from 1 to 9 such that there is no repeating number in row and column as well as the smaller 3*3 grid.
+A fun and interactive web-based **Sudoku game** built using **HTML, CSS, and JavaScript**, designed as a beginner project to learn frontend development and Git/GitHub workflow.
 
-the user have to click on the number from 1 to 9 and place them where they think is the correct position of the number, there is a counter of number of errors made till now in the game.
+## 🎯 Objective
 
+Fill a 9×9 grid so that each row, column, and 3×3 box contains numbers from 1 to 9 **without repetition**. The game tracks the number of mistakes to challenge your accuracy.
 
+## 🚀 Live Demo
 
+🔗 [Play Now](https://flashingcards.github.io/Sudoku/)
 
+## 🛠️ Tech Stack
 
-# Deployed link
+- **HTML**: Game layout and structure  
+- **CSS**: Styling and responsive design  
+- **JavaScript**: Game logic, grid validation, interactivity
 
-[Sudoku](https://flashingcards.github.io/Sudoku/)
- 
+## 🖼️ Screenshots
 
+![Sudoku Screenshot 1](screenshot1.png)  
+![Sudoku Screenshot 2](screenshot2.png)
 
-## Screenshots
+## 📦 Features
 
-![App Screenshot](https://github.com/flashingCards/weatherApp/blob/main/screenshot/Screenshot01.png)
+- Interactive 9×9 Sudoku grid
+- Number pad for user input
+- Real-time validation with error counter
+- Simple and clean UI
+- Deployed using GitHub Pages
 
-![App Screenshot](https://github.com/flashingCards/weatherApp/blob/main/screenshot/Screenshot02.png)
+## 📁 File Structure
 
-![App Screenshot](https://github.com/flashingCards/weatherApp/blob/main/screenshot/Screenshot03.png)
+```
+Sudoku/
+├── index.html        # Game UI
+├── style.css         # Styling
+├── script.js         # Game logic
+├── icon.png          # App icon
+└── README.md
+```
 
+## 💡 Learning Outcomes
 
+- Practiced **DOM manipulation** and **event handling** in JavaScript  
+- Implemented game logic and UI from scratch  
+- Gained experience using **Git** and **GitHub** for version control and deployment
